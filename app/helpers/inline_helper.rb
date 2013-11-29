@@ -55,7 +55,7 @@ module InlineHelper
 
     def phrasing_polymorphic_url(record, attribute)
       resource = Phrasing.route
-      "#{root_url}#{resource}/remote_update_phrase?klass=#{record.class.to_s}&id=#{record.id}&attribute=#{attribute}"
+      "/#{resource}/remote_update_phrase?klass=#{record.class.to_s}&id=#{record.id}&attribute=#{attribute}"
     end
 
 end
